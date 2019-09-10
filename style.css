@@ -149,5 +149,246 @@ ul{
 }
 
 .select {
+
+    display: none;
+}
+
+#design-archives nav ul{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+#design-archives nav ul li:nth-child(1) {
+    grid-column: 1 /2;
+    background-color: #4984c5;
+    padding:30px;   
+}
+
+#design-archives nav ul li:nth-child(2) {
+    grid-column: 2;
+    background-color: #f09e56;
+    padding:30px;   
+}
+
+#design-archives nav ul li:nth-child(1) a{
+    color:white; 
+    text-decoration:none;  
+}
+
+#design-archives nav ul li:nth-child(2) a{
+    color:white;
+    text-decoration:none; 
+}
+
+.archives {
     display:none;
+}
+/* what the heck */
+.design-archives nav ul li:nth-child(1) a{
+    
+    grid-column: 2 / 4;
+}
+
+.design-archives nav ul li:nth-child(2) a{
+    grid-column: 4 / 5;
+}
+
+
+
+
+footer {
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding:70px;
+    font-weight:bold;
+    font-size:1.4em;
+
+
+}
+
+footer a {
+    padding:30px;
+    text-align:center;
+    font-size:14px;
+    padding-top:60px;
+    text-decoration:none;
+    color: #666;
+}
+
+
+
+footer a:nth-child(1) {
+    background-image: url('img/html_48.png');
+    background-repeat: no-repeat;
+    background-position:top center;
+    grid-column: 2 / 3;
+}
+
+footer a:nth-child(2) {
+    background-image: url('img/css_48.png');
+    background-repeat:no-repeat;
+    background-position:top center;
+    grid-column: 3 / 4;
+
+}
+
+footer a:nth-child(3) {
+    background-image: url('img/cc_48.png');
+    background-repeat:no-repeat;
+    background-position:top center;
+    grid-column: 4 / 5;
+
+}
+
+footer a:nth-child(4) {
+    background-image: url('img/a11y_48.png');
+    background-repeat:no-repeat;
+    background-position:top center;
+    grid-column: 5 / 6;
+}
+footer a:nth-child(5) {
+    background-image: url('img/github_48.png');
+    background-repeat:no-repeat;
+    background-position:top center;
+    grid-column: 6;
+}
+
+#zen-resources {
+    background-image: url('img/world_edit.jpg');
+    padding: 130px 20px 300px 20px;
+    background-size:cover;
+    background-position:top center;
+    
+}
+
+#zen-resources ul {
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap:10px;
+}
+
+#zen-resources ul li a {
+    color:white;
+    
+    
+    text-decoration:none;
+    font-size: 11px;
+    text-transform:uppercase;
+
+}
+
+#zen-resources ul li {
+    text-align:center;
+}
+
+#zen-resources ul li:nth-child(1)  {
+    background-color:#f09e56;
+    padding:10px;
+    align-self: center;  
+    
+}
+
+#zen-resources ul li:nth-child(1) a {
+    font-size:11px;
+    
+}
+
+#zen-resources ul li:nth-child(2)  {
+    background-color:#d9d9d8;
+    padding:10px;
+    align-self: center;    
+    
+}
+
+#zen-resources ul li:nth-child(3)  {
+    background-color:rgba(255,255,255,1);
+    padding:10px;
+    color:black;
+    align-self: center;    
+}
+
+#zen-resources ul li:nth-child(3) a  {
+    color:black;
+
+}
+
+#zen-resources ul li:nth-child(4)  {
+    background-color:#facd2f;
+    padding:10px;
+    align-self: center;    
+    
+}
+
+#zen-resources ul li:nth-child(5)  {
+    background-color:#4984c5;
+    padding:10px;
+    align-self: center;    
+    
+}
+
+.resources {
+    display:none;
+}
+
+
+
+
+/* media queries */
+@media (max-width: 1000px)  {
+    .design-selection nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .design-selection nav ul li:nth-child(1) {
+        background-color: #4984c5;
+        grid-column: 1 /2;
+    }
+    .design-selection nav ul li:nth-child(2) {
+        background-color: #f09e56;
+        grid-column: 2 ;
+    }
+    
+    .design-selection nav ul li:nth-child(3) {
+        background-color: #ffffff;
+        grid-column: 1 / 2;
+        color: black;
+    }
+
+    
+    .design-selection nav ul li:nth-child(4) {
+        background-color: #facd2f;
+        grid-column: 2;
+        
+    }
+    
+    .design-selection nav ul li:nth-child(5) {
+        background-color: #ffffff;
+        grid-column: 1 / 2;
+        color: black;
+    }
+  
+    
+    .design-selection nav ul li:nth-child(6) {
+        background-color: #4984c5;
+        grid-column: 2;
+        
+    }
+    
+    .design-selection nav ul li:nth-child(7) {
+        background-color: #facd2f;
+        grid-column: 1/ 2;
+        
+    }
+    
+    .design-selection nav ul li:nth-child(8) {
+        background-color: #ffffff;
+        grid-column: 2;
+        color: black;
+    }
+
+    
+    
+    
+
 }
