@@ -3,16 +3,29 @@
     box-sizing: border-box;
     padding: 0;
     font-family: 'Robot', sans-serif;
+    line-height: 1.5em;
+}
+
+a {
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 .intro header{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     background-image: url('edited_hiker_bigger.png');
-    background-position: top right;
+    background-position: right;
     background-size:contain;
     background-repeat: no-repeat;
     margin-bottom:80px;
+}
+
+h3 {
+    font-family: "Heimat Display";
+    src: url("/fonts/Heimat Display 20 Regular.woff") format("woff2");
+    font-size: 2.5em; 
 }
 
 
@@ -40,13 +53,13 @@
     display:grid;
     grid-template-columns: repeat(5, 1fr);
     font-size: 20px;
+    
 }
 
 
 
 .summary h2 {
     grid-column: 1 / 4;
-
 }
 
 .summary p {
@@ -62,12 +75,18 @@
 
 .requirements {
     display:grid;
-    grid-template-columns: repeat(10, 1fr);
-    background-image:url('kayak_smaller_1.png');
+    grid-template-columns: repeat(5, 1fr);
+    background-image:url('img/kayak_light.png');
     background-size:contain;
     background-repeat: no-repeat;
+    background-position: right center;
+    background-color:white;
+    padding: 50px;
 }
 
+.requirements p, h3 {
+    grid-column: 1 / 5;
+}
 
 .design-selection nav ul {
     display: grid;
@@ -111,7 +130,6 @@
 .design-selection nav ul li:nth-child(4) {
     background-color: #facd2f;
     grid-column: 4;
-    
 }
 
 .design-selection nav ul li:nth-child(5) {
@@ -126,13 +144,11 @@
 .design-selection nav ul li:nth-child(6) {
     background-color: #4984c5;
     grid-column: 2 / 3;
-    
 }
 
 .design-selection nav ul li:nth-child(7) {
     background-color: #facd2f;
     grid-column: 3 / 4;
-    
 }
 
 .design-selection nav ul li:nth-child(8) {
@@ -148,15 +164,18 @@ ul{
     list-style-type: none;
 }
 
-.select {
 
+.requirements p:last-child() {
+    font-size:5em;
+}
+
+.select {
     display: none;
 }
 
 #design-archives nav ul{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    
 }
 
 #design-archives nav ul li:nth-child(1) {
@@ -184,9 +203,9 @@ ul{
 .archives {
     display:none;
 }
+
 /* what the heck */
 .design-archives nav ul li:nth-child(1) a{
-    
     grid-column: 2 / 4;
 }
 
@@ -195,16 +214,13 @@ ul{
 }
 
 
-
-
 footer {
     display:grid;
     grid-template-columns: repeat(7, 1fr);
     padding:70px;
     font-weight:bold;
     font-size:1.4em;
-
-
+    background-color:white;
 }
 
 footer a {
@@ -214,6 +230,7 @@ footer a {
     padding-top:60px;
     text-decoration:none;
     color: #666;
+    
 }
 
 
@@ -256,81 +273,99 @@ footer a:nth-child(5) {
 
 #zen-resources {
     background-image: url('img/world_edit.jpg');
-    padding: 130px 20px 300px 20px;
+    padding: 130px 20px 400px 20px;
     background-size:cover;
-    background-position:top center;
-    
+    background-position:top center; 
 }
 
 #zen-resources ul {
     display:grid;
     grid-template-columns: repeat(7, 1fr);
     grid-gap:10px;
+    grid-auto-rows: 1fr;
 }
 
 #zen-resources ul li a {
     color:white;
-    
-    
     text-decoration:none;
-    font-size: 11px;
+    font-size: 14px;
     text-transform:uppercase;
-
 }
 
 #zen-resources ul li {
     text-align:center;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    min-height:50px;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+#zen-resources ul li a {
+    text-align:center;
 }
 
 #zen-resources ul li:nth-child(1)  {
-    background-color:#f09e56;
-    padding:10px;
-    align-self: center;  
-    
+    background-color:#f09e56;  
 }
 
 #zen-resources ul li:nth-child(1) a {
-    font-size:11px;
-    
+    font-size:11px;  
 }
 
 #zen-resources ul li:nth-child(2)  {
-    background-color:#d9d9d8;
-    padding:10px;
-    align-self: center;    
-    
+    background-color:#d9d9d8; 
 }
 
 #zen-resources ul li:nth-child(3)  {
     background-color:rgba(255,255,255,1);
-    padding:10px;
     color:black;
-    align-self: center;    
 }
 
 #zen-resources ul li:nth-child(3) a  {
     color:black;
-
 }
 
 #zen-resources ul li:nth-child(4)  {
     background-color:#facd2f;
-    padding:10px;
-    align-self: center;    
-    
 }
 
 #zen-resources ul li:nth-child(5)  {
-    background-color:#4984c5;
-    padding:10px;
-    align-self: center;    
-    
+    background-color:#4984c5; 
 }
 
 .resources {
     display:none;
 }
 
+#zen-supporting {
+    background-color: #facd2f;
+}
+
+#zen-preamble {
+    background-image: url('img/summer_edit_lighter.png');
+    background-size:cover;
+   
+    
+}
+
+#zen-preamble {
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 70px 50px;
+}
+
+.preamble h3{
+    font-family: "Heimat Display";
+    src: url("/fonts/Heimat Display 20 Regular.woff") format("woff2");
+    font-size: 2.5em;
+}
+
+.preamble p {
+    grid-column: 1 / 4;
+}
 
 
 
@@ -387,8 +422,74 @@ footer a:nth-child(5) {
         color: black;
     }
 
-    
-    
-    
-
+    .intro header {
+        background-size:cover;
+    }
 }
+
+@media (max-width: 865px) {
+    #zen-resources ul  {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #zen-preamble {
+        grid-template-columns: 1fr;
+    }
+
+    .requirements {
+        background-color: #ffffff;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f09e56' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        grid-template-columns: 1fr;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    #zen-resources ul  {
+        grid-template-columns: 1fr;
+    }
+    
+    footer {
+        grid-template-columns: repeat(5, 1fr);
+        padding:0;
+        margin: 50px 10px 0px;
+        background-color: #facd2f;
+    }
+
+    footer a:nth-child(1) {
+        grid-column: 1 / 2;
+
+    }
+
+    footer a:nth-child(2) {
+        grid-column: 2 / 3;
+    }
+
+    footer a:nth-child(3) {
+        grid-column: 3 / 4;
+    }
+
+    footer a:nth-child(4) {
+        grid-column: 4 / 5;
+    }
+
+    footer a:nth-child(5) {
+        grid-column: 5;
+    }
+
+    .requirements {
+        background-color: #ffffff;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f09e56' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        grid-template-columns: 1fr;
+    }
+
+ 
+    #zen-preamble {
+        grid-template-columns: 1fr;
+        background-image: url('img/summer_small_light.png');
+    }
+}
+
